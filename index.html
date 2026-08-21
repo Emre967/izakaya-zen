@@ -1,0 +1,311 @@
+<html lang="tr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Izakaya Zen</title><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"on-tertiary":"#ffffff","on-primary":"#ffffff","surface-container-lowest":"#ffffff","primary-container":"#1c1b1b","secondary-container":"#df2842","surface-container-highest":"#e3e2e2","surface-variant":"#e3e2e2","on-secondary-fixed":"#400009","on-primary-container":"#858383","on-secondary":"#ffffff","on-surface":"#1b1c1c","outline-variant":"#c4c7c7","surface-dim":"#dbdad9","surface-container-high":"#e9e8e8","error-container":"#ffdad6","surface-container-low":"#f4f3f3","surface-container":"#efeded","secondary-fixed":"#ffdad9","secondary-fixed-dim":"#ffb3b3","on-tertiary-fixed-variant":"#454747","inverse-on-surface":"#f2f0f0","primary-fixed":"#e5e2e1","primary":"#000000","secondary":"#ba002c","on-background":"#1b1c1c","primary-fixed-dim":"#c8c6c5","tertiary-fixed":"#e2e2e2","on-primary-fixed-variant":"#474746","on-primary-fixed":"#1c1b1b","on-secondary-fixed-variant":"#920021","inverse-primary":"#c8c6c5","on-error-container":"#93000a","background":"#faf9f9","on-surface-variant":"#444748","surface":"#faf9f9","on-tertiary-container":"#838484","inverse-surface":"#2f3031","surface-tint":"#5f5e5e","on-secondary-container":"#fffbff","surface-bright":"#faf9f9","on-error":"#ffffff","tertiary-container":"#1a1c1c","error":"#ba1a1a","tertiary":"#000000","outline":"#747878","on-tertiary-fixed":"#1a1c1c"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"24px","container-max":"1200px","margin-mobile":"20px","margin-desktop":"64px","unit":"8px"},"fontFamily":{"display-lg":["EB Garamond"],"headline-lg":["EB Garamond"],"body-md":["Manrope"],"body-lg":["Manrope"],"headline-md":["EB Garamond"],"label-sm":["Manrope"],"headline-lg-mobile":["EB Garamond"]},"fontSize":{"display-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"500"}],"headline-lg":["40px",{"lineHeight":"48px","fontWeight":"500"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","fontWeight":"500"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"600"}],"headline-lg-mobile":["32px",{"lineHeight":"40px","fontWeight":"500"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-primary shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="h-20 max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-4"><img alt="Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClShDtPwlX9fHbHGvOATv5Jx8l-jiU-5XJ03GFncrO5gPCRxDwpsulDEstYMSmyaRP7ufcvNCUbJZCWELzeYVDB07S_B2HGEEjm5j1b_iQJCQlG_RpzEL2AVDoMkeL3jSZatw8iCWRSacQ9clgNpJKaccAXM5KOQ5BhAyP9QjsJgPhv9f-OrImZ6dbJ-e3P7haGBa7JfOaHJV1vSZJUb7ctQI2ZB7hl_3iEmZRHrIHZScnhkkC4prW"/><span class="font-headline-md text-headline-md text-on-primary tracking-widest uppercase">Izakaya Zen</span></div><nav class="hidden md:flex items-center gap-10" data-active-classes="text-secondary border-b border-secondary"><a class="font-label-sm text-label-sm text-on-primary-container hover:text-on-primary transition-colors py-2" data-path="menu" href="menu.html">MENÜ</a><a class="font-label-sm text-label-sm text-on-primary-container hover:text-on-primary transition-colors py-2" data-path="hakkimizda" href="hakkimizda.html">HAKKIMIZDA</a><a class="font-label-sm text-label-sm text-on-primary-container hover:text-on-primary transition-colors py-2" data-path="rezervasyon" href="rezervasyon.html">REZERVASYON</a><a class="font-label-sm text-label-sm text-on-primary-container hover:text-on-primary transition-colors py-2" data-path="iletisim" href="iletisim.html">İLETİŞİM</a></nav><div class="flex items-center gap-6"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center border border-outline-variant"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20"><div class="flex flex-col w-full relative min-h-screen bg-transparent text-on-background overflow-hidden" id="sakura-zen-home">
+<div class="fixed inset-0 w-full h-full -z-10">
+<!-- STITCH_SHADER_START:ANIMATION_7 class="w-full h-full" -->
+<div class="w-full h-full" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_7" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_7');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+
+varying vec2 v_texCoord;
+
+// Simplex 2D noise function
+vec3 permute(vec3 x) { return mod(((x*34.0)+1.0)*x, 289.0); }
+
+float snoise(vec2 v){
+  const vec4 C = vec4(0.211324865405187, 0.366025403784439,
+           -0.577350269189626, 0.024390243902439);
+  vec2 i  = floor(v + dot(v, C.yy) );
+  vec2 x0 = v -   i + dot(i, C.xx);
+  vec2 i1;
+  i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+  vec4 x12 = x0.xyxy + C.xxzz;
+  x12.xy -= i1;
+  i = mod(i, 289.0);
+  vec3 p = permute( permute( i.y + vec3(0.0, i1.y, 1.0 ))
+  + i.x + vec3(0.0, i1.x, 1.0 ));
+  vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy),
+    dot(x12.zw,x12.zw)), 0.0);
+  m = m*m ;
+  m = m*m ;
+  vec3 x = 2.0 * fract(p * C.www) - 1.0;
+  vec3 h = abs(x) - 0.5;
+  vec3 a0 = x - floor(x + 0.5);
+  vec3 m0 = 1.0 - 1.5*(a0*a0 + h*h);
+  vec3 g = a0 * vec3(x0.x, x12.x, x12.z) + h * vec3(x0.y, x12.y, x12.w);
+  return 130.0 * dot(m, g);
+}
+
+void main() {
+    vec2 uv = v_texCoord;
+    
+    // Create organic flowing motion
+    float n1 = snoise(uv * 3.0 + u_time * 0.1);
+    float n2 = snoise(uv * 6.0 - u_time * 0.15);
+    float noise = (n1 + n2 * 0.5) * 0.5 + 0.5;
+    
+    // Background colors inspired by Sakura & Zen palette
+    // Surface: #faf9f9, Surface-dim: #dbdad9
+    vec3 colorLow = vec3(0.98, 0.976, 0.976); // #faf9f9
+    vec3 colorHigh = vec3(0.86, 0.855, 0.85); // #dbdad9
+    
+    // Subtle pink tint for Sakura influence
+    vec3 sakuraTint = vec3(1.0, 0.92, 0.93);
+    
+    vec3 finalColor = mix(colorLow, colorHigh, noise);
+    finalColor = mix(finalColor, sakuraTint, noise * 0.15);
+    
+    // Vignette effect for depth
+    float vignette = 1.0 - length(uv - 0.5) * 0.5;
+    finalColor *= vignette;
+
+    gl_FragColor = vec4(finalColor, 1.0);
+}
+`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_7 -->
+</div>
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none opacity-20 mix-blend-multiply z-0" style="background-image: radial-gradient(#e5e2e1 1px, transparent 1px); background-size: 16px 16px;"></div>
+<div class="fixed top-24 right-8 w-16 h-16 z-50 pointer-events-none drop-shadow-xl" id="floating-sakura" style="transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);">
+
+</div>
+<section class="relative w-full h-[80vh] flex items-center justify-center -mt-20 z-10">
+<div class="absolute inset-0 bg-primary/20 z-10"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background/60 via-background/20 to-transparent z-10 mix-blend-overlay"></div>
+<div class="absolute inset-0 w-full h-full mix-blend-luminosity opacity-80">
+<img alt="Sakura &amp; Zen Sushi Platter" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw0yTfD24pJsmnBqIGFZxwyo1yKRVqaLDEvGYirBBL15aF5G9YTt4CzDI6Rzq2kvymL8yBzwPg-lCHb9PWElvD25viRK9vkzclY11wlD1yUHdhOhnfrFehv-boDXM6cEKiZnLCzNxmGWy0hOKY2DRVF95IaBchOVNTdtQgVbQHREFngsL5jjud-5I5kTW2p9Mw8h243aFuOCS3JwFqE7Lx2N2Dm-0IQGA8Ia0nR__fvj4_zQpwLd9g"/>
+</div>
+<div class="relative z-20 max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop text-center flex flex-col items-center mt-24">
+<p class="font-label-sm text-label-sm text-on-secondary tracking-[0.3em] uppercase mb-6 opacity-90">SAKURA &amp; ZEN</p>
+<h1 class="font-display-lg text-display-lg text-on-secondary mb-10 max-w-4xl leading-tight drop-shadow-md">
+        Geleneksel Lezzet, <br/><span class="italic font-light">Modern Dokunuş.</span>
+</h1>
+<div class="w-[1px] h-16 bg-on-secondary/40 mb-10"></div>
+<a class="group relative inline-block px-8 py-4 bg-primary text-on-primary font-label-sm text-label-sm tracking-widest uppercase overflow-hidden border border-outline-variant hover:border-secondary transition-colors duration-500" href="rezervasyon.html">
+<span class="relative z-10 transition-transform duration-500 group-hover:-translate-y-[150%] block">Rezervasyon Yap</span>
+<span class="absolute inset-0 z-10 flex items-center justify-center translate-y-[150%] transition-transform duration-500 group-hover:translate-y-0 text-secondary">
+          Masa Ayırt
+        </span>
+</a>
+</div>
+</section>
+<section class="relative w-full py-[120px] z-10 bg-transparent">
+<div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-gutter items-center">
+<div class="lg:col-span-5 relative group">
+<div class="absolute -inset-4 bg-surface-container-high/40 backdrop-blur-sm -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-lg"></div>
+<div class="relative aspect-[3/4] overflow-hidden border border-outline-variant/30 rounded-sm">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-100 group-hover:scale-105" data-alt="A highly detailed, cinematic photograph of a serene Japanese zen garden. Raked white gravel in perfect concentric circles around weathered, dark rocks. Soft, diffused morning light filtering through bamboo leaves, creating dappled shadows. Wabi-sabi aesthetic, muted earthy tones, calm, meditative atmosphere. High contrast, sharp focus on the gravel texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvA9oWoUijoMYpWLJTV9hjKL69iwrnTFeIKJ-GEjdIVNrWYP7tLWIuwximQCZw9R2cQLfAXuLk6ygisDdiYHKjWNG7Bj4JXKF3sArd-t86fU1HMkk7kR9bN6u8qA2kESE2dE5P5tzJBtYuLTUIVI7zmSBV0qqjs0M-FBtqYaK-k_6Kj2lG06TCNR78AzQQWKd8gVLGY7-7CGPyichRyJP_VnQ1azHiGncn1XHOj-yNzf5GM5fklZWC"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-32 h-32 bg-secondary rounded-full flex items-center justify-center shadow-xl rotate-12 scale-90 group-hover:scale-100 transition-transform duration-700">
+<span class="font-display-lg text-4xl text-on-secondary opacity-90">和</span>
+</div>
+</div>
+<div class="lg:col-span-6 lg:col-start-7 flex flex-col pt-8 lg:pt-0">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-12 h-[1px] bg-outline"></div>
+<span class="font-label-sm text-label-sm tracking-[0.2em] uppercase text-on-surface-variant">Felsefemiz</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">
+            Denge ve Uyumun <br/><span class="italic text-surface-tint">Sessiz Şiiri</span>
+</h2>
+<div class="space-y-6 text-on-surface-variant font-body-lg text-body-lg">
+<p>
+              Sakura &amp; Zen'de, yemek pişirmeyi bir sanat formu olarak görüyoruz. Tıpkı bir Zen bahçesinin özenle düzenlenmesi gibi, her tabağımızda doğanın sunduğu en taze malzemeleri, mevsimlerin ritmiyle uyum içinde sunuyoruz.
+            </p>
+<p>
+              Wabi-sabi felsefesini benimsiyor; sadeliğin içindeki kusursuzluğu, geçiciliğin içindeki güzelliği arıyoruz. Geleneksel Edomae tekniklerini, modern bir sunumla birleştirerek, sadece doyurucu değil, aynı zamanda ruhu besleyen bir gastronomi deneyimi vadediyoruz.
+            </p>
+</div>
+<div class="mt-12">
+<a class="inline-flex items-center gap-3 font-label-sm text-label-sm text-primary tracking-widest uppercase hover:text-secondary transition-colors group" href="hakkimizda.html#hikaye">
+              Hikayemizi Keşfedin
+              <span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="relative w-full py-[160px] z-10 bg-primary/95 text-on-primary backdrop-blur-md">
+<div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg mb-4">Öne Çıkanlar</h2>
+<p class="font-body-md text-on-primary-container max-w-md">Şefimizin özenle hazırladığı, mevsimin en taze lezzetlerini yansıtan imza tabaklarımız.</p>
+</div>
+<a class="border-b border-on-primary/30 pb-1 font-label-sm text-label-sm tracking-widest uppercase hover:border-secondary hover:text-secondary transition-colors whitespace-nowrap" href="menu.html">Tüm Menüyü Gör</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<article class="group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden mb-6 border border-outline/20">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Close up shot of an exquisite Omakase sushi presentation on a dark slate plate. Fresh, glistening slices of Toro (fatty tuna), Uni (sea urchin), and Ikura (salmon roe). Served on a minimalist wooden counter. Moody, dramatic lighting, sharp focus on the texture of the fish. Luxury Japanese cuisine aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwyfxEVbKthIhYjG35g7BXAVXs0nKANkNjABZ9sRM-elLQ6UGvAAoh4R3ZJVIdwi_VLD6HK1q7VDkcsC3CyxtH5VYdLV52SNKmAbZhfGo1N6vP46uN0AzDE0RwGAtzfTcidjWxwOO6n3Kzj8LVs61wP26EXMRE4pbfPreO_GgVYHtaOq_qkjuIE7uezOIqMu_eyFlDsL7QjiqMXhB-nyh6-iDKPpqXQ_o2kufR3sudNBN4mWGTxKlm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-md text-headline-md">Omakase Deneyimi</h3>
+<span class="font-label-sm text-secondary tracking-widest">₺3.500</span>
+</div>
+<div class="w-full border-b border-outline/20 border-dotted mb-3"></div>
+<p class="font-body-md text-on-primary-container line-clamp-2">Şefin seçimiyle hazırlanan, 15 aşamalı geleneksel ve modern lezzet yolculuğu.</p>
+</article>
+<article class="group cursor-pointer md:mt-16">
+<div class="relative aspect-[4/5] overflow-hidden mb-6 border border-outline/20">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Three perfectly formed Nigiri sushi pieces on a textured, light-colored ceramic dish. Slices of fresh salmon, yellowtail, and sea bream over seasoned rice. A tiny dab of fresh wasabi on the side. Top-down, slightly angled view. Soft, natural light highlighting the gloss of the seafood. Minimalist, clean composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXlvbY8syfGaV_rVsliz0UX5CiuJScXxtYS7ODWyhelDqB3NVr71Yk-SRhrD9apj1tds6L0SDEB6pKHVSKupUWj15_o9edgHBhPulfe0Td9AYoe5V-Q6Rr0Pqun72XZIZkbAchCdTiF_lFZZuPxfc-eAgdsDjfFeRKZHBELK46bOSh-DPAdCnPe8SWd8mcCjYizLJvlN20uVDMMWuPIjGK1egj00hVz_0TlyA9Zy8oa49iA_YDWDT5"/>
+<div class="absolute top-4 right-4 w-12 h-12 bg-secondary rounded-full flex items-center justify-center shadow-lg z-10">
+<span class="font-label-sm text-[10px] text-on-secondary tracking-widest leading-none text-center">YENİ</span>
+</div>
+</div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-md text-headline-md">Mevsim Nigiri</h3>
+<span class="font-label-sm text-secondary tracking-widest">₺950</span>
+</div>
+<div class="w-full border-b border-outline/20 border-dotted mb-3"></div>
+<p class="font-body-md text-on-primary-container line-clamp-2">Günlük olarak Tokyo'dan getirtilen balıklarla hazırlanan, mevsimin en taze seçkisi.</p>
+</article>
+<article class="group cursor-pointer md:mt-32">
+<div class="relative aspect-[4/5] overflow-hidden mb-6 border border-outline/20">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="A delicate Matcha dessert presentation. A vivid green matcha fondant cake with a liquid center, dusted with powdered sugar, sitting on a matte black plate. Accompanied by a small scoop of black sesame ice cream and a delicate spun sugar garnish. Elegant, contemporary plating, moody lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6ZZcgJSL5wnmp3m7Q4h9nxRajGkGLMJcq_8JwmBMHdaD_hRMa5HofrZjO32eUHfg30WX0kqlGi7tD_FcIPzjD6y8n1YKA_jBOepOBu0n8t7nF1pMlByt76i0v-zYuj9S9OHdTXsTdyU6IzeMNFuJ2L1yLx_3pbSjdAWofxrAyEKqUunCLoR_ujSAcr3cqN2EV-kw6Dk7RfyZrTSR-Bk1RbAEiyWiFShp3RbTH70u-SvKPQwOs1EI7"/>
+</div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-md text-headline-md">Matcha Rüyası</h3>
+<span class="font-label-sm text-secondary tracking-widest">₺420</span>
+</div>
+<div class="w-full border-b border-outline/20 border-dotted mb-3"></div>
+<p class="font-body-md text-on-primary-container line-clamp-2">Kyoto'nun premium matcha çayı ile hazırlanan, sıcak ve soğuğun mükemmel uyumu.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="relative w-full py-[120px] bg-surface-container/60 backdrop-blur-sm overflow-hidden z-10">
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: url('data:image/svg+xml;utf8,&lt;svg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;g fill=\'none\' fill-rule=\'evenodd\'&gt;&lt;g fill=\'%23000000\' fill-opacity=\'1\'&gt;&lt;path d=\'M30 30c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10-4.477 10-10 10zm0-2c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-14c-3.314 0-6 2.686-6 6s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zM0 60c0-5.523 4.477-10 10-10s10 4.477 10 10v2h-2v-2c0-4.418-3.582-8-8-8s-8 3.582-8 8v2H0v-2zm60 0c0-5.523-4.477-10-10-10s-10 4.477-10 10v2h2v-2c0-4.418 3.582-8 8-8s8 3.582 8 8v2h2v-2zM30 60c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10-4.477 10-10 10zm0-2c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-14c-3.314 0-6 2.686-6 6s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z\'/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;');"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop relative">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="w-full lg:w-1/2">
+<span class="font-label-sm text-label-sm text-secondary tracking-[0.2em] uppercase mb-4 block">[ Kültürel Köşemiz ]</span>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-6">
+            Özüne Sadık,<br/>Malzemeye Saygılı.
+          </h2>
+<div class="h-[1px] w-full bg-outline-variant/50 mb-8 relative">
+<div class="absolute top-1/2 left-0 -translate-y-1/2 w-8 h-[2px] bg-secondary"></div>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+            Gerçek Japon mutfağı, malzemenin doğal tat profilini gizlemek yerine onu ön plana çıkarmayı amaçlar. Biz de mutfağımızda, mevsimin sunduğu en iyi ürünleri arıyor, onları geleneksel tekniklerle onurlandırıyoruz. Soya sosumuz yıllanmış, pirincimiz özenle seçilmiş, deniz ürünlerimiz ise sürdürülebilir kaynaklardan temin edilmiştir.
+          </p>
+<div class="grid grid-cols-2 gap-8 mt-12">
+<div class="border-l border-outline-variant pl-6 hover:border-secondary transition-colors">
+<h4 class="font-headline-md text-[24px] text-on-surface mb-2">Toyosu</h4>
+<p class="font-body-md text-on-surface-variant text-sm">Haftalık taze balık ithalatı.</p>
+</div>
+<div class="border-l border-outline-variant pl-6 hover:border-secondary transition-colors">
+<h4 class="font-headline-md text-[24px] text-on-surface mb-2">Koshihikari</h4>
+<p class="font-body-md text-on-surface-variant text-sm">Premium kalite suşi pirinci.</p>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 relative h-[500px]">
+<div class="absolute top-0 right-0 w-3/4 h-[400px] border border-outline-variant bg-surface/90 backdrop-blur-sm p-4 shadow-sm z-10 hover:-translate-y-2 transition-transform duration-500">
+<img class="w-full h-full object-cover" data-alt="A macro shot of premium soy sauce being poured into a small ceramic dish, catching the light perfectly. Warm, inviting tones, shallow depth of field. Highlighting the rich, dark color of the aged soy sauce." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDntqiwqh9GWfwMPB1U15T3ENTdqrtl0IGiUSwMeK8wjhmeheZHimifxPus14AWq57fYwO-K3EpsdrRaYanGFiKF74axTWHfOZS0ZZHx17_DOb-p2x75iUCtrHYOZJxpCHLZ-YTthYBkCHRPxBbPH8kB32MbQmPzezAw0RYYbmNQk5gHzlQH1DeYZWPcQ5uBlTZr4ZzIqYURQJn7ScX5zoDFFyutio8zRfRMHCEyb8VaQDqDUjpP8Qe"/>
+</div>
+<div class="absolute bottom-0 left-0 w-2/3 h-[300px] border border-outline-variant bg-surface/90 backdrop-blur-sm p-4 shadow-md z-20 hover:-translate-y-2 transition-transform duration-500">
+<img class="w-full h-full object-cover" data-alt="Close up of perfectly polished raw sushi rice grains being gently washed in a wooden tub. Clean, bright natural lighting, emphasizing the texture and purity of the ingredients. Minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjARr_nuIlftt3Iw96w9lbl0SCTTe5dCnVd7KbLbaZvTSzp4NRrz_lnBS6ey_Xg3SerB1lrGPYuRnMGcrBqxpzAZfzrn2yd-9zm9pWdfxVXQp5GB_0tGVQlvvUzVnMxsgheJJIihm4Bun2wXFFWXXLVclOoe2Wq5irWqU-9inGQOXE98_28pdZmj1H81jJERTkefxCxylQC01HCMYE6zx-MDZWzkeYZiI5ppymRmpj0XogyyYlq4Za"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const floatingSakura = document.getElementById('floating-sakura');
+    
+    if (floatingSakura) {
+      window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        
+        const floatY = Math.sin(scrollY * 0.005) * 40; 
+        const floatX = Math.cos(scrollY * 0.003) * 20; 
+        const rotation = scrollY * 0.05;
+        
+        floatingSakura.style.transform = `translate3d(${floatX}px, ${floatY}px, 0) rotate(${rotation}deg)`;
+      });
+    }
+  });
+</script></main><footer class="w-full bg-primary py-20 mt-20 relative z-10"><div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-3 gap-16 items-start"><div class="flex flex-col gap-6"><img alt="Logo" class="h-12 w-fit object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClShDtPwlX9fHbHGvOATv5Jx8l-jiU-5XJ03GFncrO5gPCRxDwpsulDEstYMSmyaRP7ufcvNCUbJZCWELzeYVDB07S_B2HGEEjm5j1b_iQJCQlG_RpzEL2AVDoMkeL3jSZatw8iCWRSacQ9clgNpJKaccAXM5KOQ5BhAyP9QjsJgPhv9f-OrImZ6dbJ-e3P7haGBa7JfOaHJV1vSZJUb7ctQI2ZB7hl_3iEmZRHrIHZScnhkkC4prW"/><p class="font-body-md text-body-md text-on-primary-container leading-relaxed italic text-opacity-80">Wabi-sabi: Kusurun içindeki güzelliği bulmak.</p></div><div class="flex flex-col gap-4"><h4 class="font-label-sm text-label-sm text-on-primary tracking-[0.2em] uppercase opacity-60">İletişim</h4><p class="font-body-md text-body-md text-on-primary-container">İstanbul, Türkiye</p><p class="font-body-md text-body-md text-on-primary-container">+90 212 000 00 00</p></div><div class="flex flex-col gap-4"><h4 class="font-label-sm text-label-sm text-on-primary tracking-[0.2em] uppercase opacity-60">Çalışma Saatleri</h4><p class="font-body-md text-body-md text-on-primary-container">Salı - Pazar: 18:00 - 23:00</p><p class="font-body-md text-body-md text-on-primary-container">Pazartesi: Kapalı</p></div></div><div class="mt-16 pt-8 border-t border-outline/20 text-center font-label-sm text-label-sm text-on-primary-container opacity-40 uppercase tracking-widest">© 2024 Izakaya Zen. Tüm Hakları Saklıdır.</div></div></footer></body></html>
