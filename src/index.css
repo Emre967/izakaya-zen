@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ported from the shared inline <style> block that used to sit in every
+   page's <head>. */
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Sayfa geçişleri: View Transitions API — desteklemeyen tarayıcıda bu kural
+   yok sayılır, site normal davranır. Artık her sayfada tekrarlanmıyor,
+   tek yerden yönetiliyor. */
+@view-transition {
+  navigation: auto;
+}
+header {
+  view-transition-name: az-header;
+}
+::view-transition-old(root) {
+  animation: az-vt-out 0.35s ease both;
+}
+::view-transition-new(root) {
+  animation: az-vt-in 0.35s ease both;
+}
+@keyframes az-vt-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes az-vt-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* rezervasyon.html: floating leaf icon on the reservation card */
+.floating-leaf {
+  animation: float 6s ease-in-out infinite;
+  transform-origin: center;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(15deg);
+  }
+}
+
+/* iletisim.html: drifting blur dots in the background. Renamed from the
+   original page's own `float` keyframe (same name, different animation)
+   to avoid colliding with the one above now that both pages share one
+   global stylesheet. */
+@keyframes float-fade {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100px) rotate(180deg);
+    opacity: 0;
+  }
+}
